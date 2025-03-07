@@ -1,0 +1,631 @@
+$primary-color: #fff;
+$sidebar-width: 80px;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'La Belle Aurore';
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Coolvetica';
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+}
+
+input, textarea {
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+$sidebar-width: 80px;
+
+/* Layout section */
+  .scroll-style {
+    overflow: auto;
+    scroll-snap-type: both mandatory;
+    height: 100%;
+    width: 100%;
+    scroll-snap-stop: always;
+  }
+
+  .grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    scroll-snap-align: center;
+  }
+
+  .top-tags {
+    top: 5.5%;
+  }
+
+  .tags {
+    color: #fff;
+    opacity: 0.6;
+    left: 120px;
+    font-size: 18px;
+    font-family: 'La Belle Aurore', cursive;
+    position: absolute;
+  }
+
+  .bottom-tags {
+    bottom: 5.5%;
+  }
+
+  .wrapper-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .container {
+    height: 100vh;
+    opacity: 0;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    margin-left: $sidebar-width;
+    scroll-snap-align: center;
+    padding: 0rem 15rem;
+  }
+
+  .container.contact-page,
+  .container.about-page,
+  .container.portfolio-page {
+
+      h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #fff;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: -10px;
+
+        &:before {
+          content: '<h1>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #000080;
+          font-size: 18px;
+          position: absolute;
+          margin-top: -10px;
+          left: -10px;
+          opacity: 0.6;
+          line-height: 18px;
+        }
+
+        &:after {
+          content: '<h1/>';
+          font-family: 'La Belle Aurore', cursive;
+          color: #000080;
+          font-size: 18px;
+          line-height: 18px;
+          left: -30px;
+          bottom: -20px;
+          margin-left: 20px;
+          opacity: 0.6;
+        }
+      }
+
+      p {
+        font-size: 15px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        max-width: fit-content;
+        animation: pulse 1s;
+        &:nth-of-type(1) {
+          animation-delay: 1.1s;
+        }
+        &:nth-of-type(2) {
+          animation-delay: 1.2s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: 1.3s;
+        }
+      }
+
+    .text-animate-hover {
+      &:hover {
+        color: #000080;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .page {
+      position: initial;
+    }
+
+    .container {
+      position: initial;
+      height: auto;
+      min-height: auto;
+
+      &.contact-page,
+      &.about-page,
+      &.portfolio-page {
+        .text-zone {
+          position: initial;
+          transform: none;
+          width: 100%;
+          display: block;
+          box-sizing: border-box;
+        }
+      }
+
+      &.portfolio-page {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+
+        h1.page-title {
+          margin-left: 20px;
+          margin-top: 20px;
+        }
+
+        .image-box {
+          height: 200px;
+          max-width: calc(50% - 10px);
+        }
+      }
+    }
+
+    .stage-cube-cont {
+      position: initial;
+      width: 100%;
+      height: 0%;
+      overflow: visible;
+    }
+  }
+
+/* Home section */
+.title-logo {
+  vertical-align: 0px;
+  margin-right: 2px;
+  margin-left: 13px;
+}
+
+h1 {
+  color: #fff;
+  font-size: 80px;
+  line-height: 53px;
+  margin: 0;
+  font-family: 'Coolvetica';
+  font-weight: 400;
+
+  &:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #fff;
+    font-size: 65px;
+    position: absolute;
+    margin-top: -40px;
+    left: -15px;
+    opacity: 0.6;
+  }
+
+  &:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #000080;
+    font-size: 65px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+
+  img {
+    margin-left: 20px;
+    opacity: 1;
+    width: 60px;
+    height: auto;
+    animation: rotateIn 1s linear both;
+    animation-delay: 0.5s;
+  }
+}
+
+h2 {
+  color: #fff;
+  font-weight: 300;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  animation: fadeIn 1s 1.8s backwards;
+}
+
+.flat-button {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 4px;
+  font-family: sans-serif;
+  text-decoration: none;
+  padding: 14px 18px;
+  border: 1px solid #fff;
+  margin-top: 15px;
+  float: left;
+  animation: fadeInAnimation 1s 1.8s backwards;
+  white-space: nowrap;
+  margin-right: 20px;
+
+  &:hover {
+    background: #fff;
+    color: #9B111E;
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .tags,
+  .home-page h1:before,
+  .home-page h1:after {
+    display: none;
+  }
+
+  .home-page .text-zone {
+    position: initial;
+    width: 100%;
+    transform: none;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .home-page .flat-button {
+    float: none;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 124px;
+  }
+
+  .logo-container {
+    position: relative;
+    width: 100px;
+    height: auto;
+    top: 50px;
+    right: 0;
+    box-sizing: border-box;
+    margin: auto;
+    left: 0;
+  }
+
+  .logo-img {
+    opacity: 0;
+  }
+
+  .logo-container svg {
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 0;
+    margin: auto;
+  }
+}
+
+/* Home Logo section */
+.logo-container {
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+}
+
+.logo-img {
+  cursor: pointer;
+}
+
+
+
+
+
+/* Sidebar section */
+.nav-bar {
+  background: #181818;
+  width: $sidebar-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .nav-logo {
+    display: block;
+    padding: 8px 0;
+    text-align: center;
+
+    .sidebar img {
+      display: block;
+      margin: 8px auto;
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.2s ease-out;
+      }
+
+      &:hover {
+        color: #fff;
+
+        i {
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.linkedin-link {
+      &:after {
+        content: 'LINKEDIN';
+      }
+    }
+
+    a.github-link {
+      &:after {
+        content: 'GITHUB';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #fff;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 15px;
+        line-height: 16px;
+        color: #4d4d4e;
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.hamburger-icon, .close-icon {
+  display: none;
+}
+
+/* portfolio section */
+.portfolio-page {
+  height: 100vh;
+
+  h1 {
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    color: #fff;
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 40px;
+    left: -10px;
+    }
+
+  h2 {
+    color: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+  }
+  .img-container {
+    grid-column: 2;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-img {
+    max-width: 100%;
+    width: 600px;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+}
+
+.portfolio-header-text {
+  width: 30vw;
+}
+
+.list-container {
+  font-size: 20px;
+}
+
+.wrapper-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 1300px;
+  padding: 3rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Animated Letters section */
+.text-animate {
+  display: inline-block;
+  opacity: 0;
+  animation: bounceIn;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  min-width: 10px;
+}
+
+.text-animate-hover {
+  min-width: 10px;
+  display: inline-block;
+  animation-fill-mode: both;
+
+  &:hover {
+    animation: rubberBand 0.7s;
+    color: #000080;
+  }
+}
+
+@for $i from 1 through 35 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 10}s;
+  }
+}
+
+/* About Section */
+.about-header-text, .home-header-text {
+  width: 35vw;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav-bar {
+    background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+     ul, nav {
+      display: none;
+     }
+
+     nav {
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #181818;
+      height: 100%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+
+      &.mobile-show {
+        display: block;
+      }
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+     }
+
+     .hamburger-icon,
+     .close-icon {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        display: block;
+     }
+  }
+}
