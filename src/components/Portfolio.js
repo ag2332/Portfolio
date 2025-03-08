@@ -2,7 +2,7 @@ import React from 'react'
 import LogoALarge from '../assets/images/Logo-A-Large.png'
 import Grid2 from './atoms/Grid2'
 import ESimg from '../assets/images/EspressoSync-logo.png'
-
+import ZFimg from '../assets/images/zenfusion.png'
 
 const Portfolio = () => {
   const cardData = [
@@ -43,7 +43,7 @@ const Portfolio = () => {
                     <li>Frontend: React.</li>
                     <li>Design: Figma for UX, Headless UI for UI.</li>
                 </ul>`,
-      image: LogoALarge,
+      image: ZFimg,
       url: "https://github.com/ag2332/ZenFusion"
     },
     {
