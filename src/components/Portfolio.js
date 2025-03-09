@@ -1,8 +1,8 @@
 import React from 'react'
-import LogoALarge from '../assets/images/Logo-A-Large.png'
 import Grid2 from './atoms/Grid2'
 import ESimg from '../assets/images/EspressoSync-logo.png'
 import ZFimg from '../assets/images/zenfusion.png'
+import CSimg from '../assets/images/coming-soon.png'
 
 const Portfolio = () => {
   const cardData = [
@@ -49,7 +49,7 @@ const Portfolio = () => {
     {
       id: 3,
       title: 'Website 3',
-      description: 'Website 3, to be filled later',
+      description: 'Website 3, coming soon',
       Header1: 'Features:',
       list1: `<ul>
                     <li>Responsive Design: Optimized for both desktop and mobile devices.</li>
@@ -63,8 +63,8 @@ const Portfolio = () => {
                     <li>Frontend: React.</li>
                     <li>Design: Figma for UX, Headless UI for UI.</li>
                 </ul>`,
-      image: LogoALarge,
-      url:""
+      image: CSimg,
+      url: "https://github.com/ag2332/"
     },
   ]
 
