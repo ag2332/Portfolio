@@ -18,7 +18,7 @@ const PortfolioHeader = () => {
                     />
                 </h1>
                 <h2>
-                    Please see my list of projects below. Each one has a provided desciprition and is linked to my github. If you like what you see, reach out to me using the button below.
+                    Please see my list of projects below. Each one has a provided desciprition and is linked to my Github. If you like what you see, reach out to me using the button below.
                 </h2>
                 <div>
 
