@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedLetters from "./AnimatedLetters";
 import Grid2 from "./atoms/Grid2";
 import Buttons from "./atoms/Buttons";
 import info from "../assets/images/info.svg"
 
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
+    const [letterClass, setLetterClass] = useState('text-animate');
+
+    useEffect(() => {
+        return setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 3000)
+      }, [])
 
     return (
         <Grid2 className="container portfolio-page">
@@ -29,7 +35,7 @@ const About = () => {
                 <Buttons/>
             </div>
             <div className="img-container">
-                <img className="grid-img" src={info} alt="info image" />
+                <img className="grid-img" src={info} alt="info" />
             </div>
         </Grid2>
     );
