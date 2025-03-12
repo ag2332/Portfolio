@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import LogoALarge from "../assets/images/Logo-A-Large.png"
 import AnimatedLetters from "./AnimatedLetters";
 import HomeLogo from "./HomeLogo";
@@ -9,6 +9,12 @@ const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
     const nameArray = ['r','c','h','i','e',',']
     const jobArray = ['w','e','b','','d','e','v','e','l','o','p','e','r']
+
+    useEffect(() => {
+        return setTimeout(() => {
+          setLetterClass('text-animate-hover')
+        }, 4000)
+      }, [])
 
     return (
         <Grid2 className="container portfolio-page">

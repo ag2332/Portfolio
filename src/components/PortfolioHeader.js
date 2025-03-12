@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnimatedLetters from "./AnimatedLetters";
 import portfolioImg from "../assets/images/portfolio.svg";
 import Grid2 from "./atoms/Grid2";
@@ -6,6 +6,16 @@ import Buttons from "./atoms/Buttons";
 
 const PortfolioHeader = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setLetterClass('text-animate-hover');
+        }, 3000);
+
+        return () => {
+            clearTimeout(timer);
+        }
+    });
 
     return (
         <Grid2 className="container portfolio-page">
@@ -26,7 +36,7 @@ const PortfolioHeader = () => {
                 <Buttons/>
             </div>
             <div className="img-container">
-                <img className="grid-img" src={portfolioImg} alt="portfolio image" />
+                <img className="grid-img" src={portfolioImg} alt="portfolio" />
             </div>
         </Grid2>
     );
