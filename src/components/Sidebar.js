@@ -29,7 +29,7 @@ const Sidebar = () => {
           <i className="fa-solid fa-briefcase"></i>
         </NavLink>
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/archie-george-41a116356"
           target="_blank"
           rel="noreferrer"
           className="linkedin-link"

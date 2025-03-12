@@ -52,16 +52,16 @@ const Portfolio = () => {
       description: 'Website 3, coming soon',
       Header1: 'Features:',
       list1: `<ul>
-                    <li>Responsive Design: Optimized for both desktop and mobile devices.</li>
-                    <li>Interactive Menu: Dynamic display of dishes with detailed descriptions.</li>
-                    <li>Online Reservation: Allows users to easily reserve a table online.</li>
-                    <li>Visual Design: Sleek, modern design showcasing the restaurant's ambiance.</li>
-                    <li>Easy Navigation: User-friendly interface for quick access to key information.</li>
+                    <li>Point 1:</li>
+                    <li>Point 2:</li>
+                    <li>Point 3:</li>
+                    <li>Point 4:</li>
+                    <li>Point 5:</li>
                 </ul>`,
       Header2: 'Tech Stack:',
       list2: `<ul>
-                    <li>Frontend: React.</li>
-                    <li>Design: Figma for UX, Headless UI for UI.</li>
+                    <li>Frontend:</li>
+                    <li>Backend: </li>
                 </ul>`,
       image: CSimg,
       url: "https://github.com/ag2332/"

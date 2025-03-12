@@ -7,7 +7,7 @@ const Buttons = ({ href = '', text = '' }) => {
         text: "Contact Me"
     },{
         id: 2,
-        href: "https://www.linkedin.com",
+        href: "https://www.linkedin.com/in/archie-george-41a116356",
         text: "LinkedIn"
     },{
         id: 3,
