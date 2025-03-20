@@ -7,7 +7,7 @@ import Buttons from './atoms/Buttons'
 const Home = () => {
   return (
     <Grid2 className="container portfolio-page">
-      <div>
+      <div className="home-text">
         <h1>
           <span>Hi, I'm</span>
           <img className="title-logo" src={LogoALarge} alt="titleA" />
