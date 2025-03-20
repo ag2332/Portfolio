@@ -8,12 +8,11 @@ const Home = () => {
   return (
     <Grid2 className="container portfolio-page">
       <div>
-        <h1>Hi, I'm</h1>
         <h1>
+          <span>Hi, I'm</span>
           <img className="title-logo" src={LogoALarge} alt="titleA" />
           <span>rchie</span>
         </h1>
-        <h1>Web Developer</h1>
         <h2>Frontend/React Developer</h2>
         <Buttons />
       </div>
