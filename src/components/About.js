@@ -1,27 +1,15 @@
-import React, { useState, useEffect } from "react";
-import AnimatedLetters from "./AnimatedLetters";
+import React from "react";
 import Grid2 from "./atoms/Grid2";
 import Buttons from "./atoms/Buttons";
 import info from "../assets/images/info.svg"
 
 const About = () => {
-    const [letterClass, setLetterClass] = useState('text-animate');
-
-    useEffect(() => {
-        return setTimeout(() => {
-          setLetterClass('text-animate-hover')
-        }, 3000)
-      }, [])
 
     return (
         <Grid2 className="container portfolio-page">
             <div className="about-header-text">
                 <h1>
-                    <AnimatedLetters
-                    letterClass={letterClass}
-                    strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-                    idx={15}
-                    />
+                    About me
                 </h1>
                 <p>
                     Hi there, my name is Archie and I'm a 21 year old front-end developer looking for a role in a company where I can grow and learn. I am incredibly passionate about UX & UI and throughly enjoy bulding user focussed applications.
