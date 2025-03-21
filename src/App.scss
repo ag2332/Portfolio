@@ -175,7 +175,6 @@ $sidebar-width: 80px;
     }
 
     &.portfolio-page {
-      width: 100%;
       padding: 20px;
       box-sizing: border-box;
 
@@ -337,6 +336,10 @@ h2 {
     align-items: center;
     text-align: center;
     position: absolute;
+  }
+
+  .home-text {
+    transform: scale(0.8);
   }
 
 }
