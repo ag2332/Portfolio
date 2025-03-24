@@ -11,21 +11,24 @@ const About = () => {
         <p>
           Hi there, my name is Archie and I'm a 21 year old front-end developer
           looking for a role in a company where I can grow and learn. I am
-          incredibly passionate about UX & UI and throughly enjoy bulding user
-          focussed applications.
+          incredibly passionate about UX & UI and throughly enjoy bulding user-focused
+          applications.
         </p>
         <p>
           As a junior front-end developer, I embrace growth through both
           successes and mistakes. I welcome feedback and see it as key to
           improving my skills. With a mindset of continuous learning, I seek
-          opportunities to expand my knowledge and tackle new challenges. I view
-          mistakes as valuable lessons and prioritize collaboration and
+          opportunities to expand my knowledge and tackle new challenges.
+          <br/>
+          I view mistakes as valuable lessons and prioritise collaboration and
           communication to contribute to team goals while growing individually.
         </p>
         <p>
-          Outside of coding, I'm an Arsenal fan, enjoy weightlifting for focus
+          Outside of coding, I enjoy weightlifting for focus
           and discipline, and have a strong interest in finance, learning about
-          markets and investment strategies. These hobbies keep me balanced and
+          markets and investment strategies.
+          <br/>
+          These hobbies keep me balanced and
           inspire my approach to problem-solving and self-improvement.
         </p>
         <Buttons />

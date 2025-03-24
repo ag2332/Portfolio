@@ -10,8 +10,11 @@ const PortfolioHeader = () => {
         <h1>Portfolio</h1>
         <h2>
           Please scroll to see my list of projects below. Each one has a provided
-          desciprition and is linked to my Github. If you like what you see,
-          reach out to me using the button below.
+          description and is linked to my Github.
+        </h2>
+        <h2>
+          If you like what you see,
+          reach out to me using the contact button below.
         </h2>
         <Buttons />
       </div>
