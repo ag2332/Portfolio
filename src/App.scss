@@ -77,7 +77,6 @@ $sidebar-width: 80px;
 }
 
 .container {
-  height: 100vh;
   opacity: 0;
   margin: 0 auto;
   z-index: 1;
@@ -291,7 +290,7 @@ h2 {
   .about-header-text,
   .portfolio-header-text {
 
-    transform: scale(0.9);
+    transform: scale(0.8);
   }
 
 }
