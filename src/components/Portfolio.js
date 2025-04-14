@@ -2,69 +2,69 @@ import React from 'react'
 import Grid2 from './atoms/Grid2'
 import ESimg from '../assets/images/EspressoSync-logo.png'
 import ZFimg from '../assets/images/zenfusion.png'
-import CSimg from '../assets/images/coming-soon.png'
+import SBimg from '../assets/images/story-book.svg'
 
 const Portfolio = () => {
   const cardData = [
     {
       id: 1,
+      title: 'Future Digital Component Library',
+      description: 'Reusable component library built in Storybook',
+      Header1: 'Features:',
+      list1: `<ul>
+                  <li>Modular UI built with React and TypeScript.</li>
+                  <li>Interactive previews, usage guides and intergrated testing.</li>
+                  <li>Tailwind + CVA for scalable variants.</li>
+                  <li>Strongly typed props and autocomplete support.</li>
+                  <li>Isolated, customizable components with docs for rapid dev.</li>
+              </ul>`,
+      Header2: 'Tech Stack:',
+      list2: `<ul>
+                    <li>Frontend: React, TypeScript, Tailwind CSS.</li>
+                    <li>Backend: StoryBook.</li>
+                </ul>`,
+      image: SBimg,
+      url: 'https://github.com/ag2332/',
+    },
+    {
+      id: 2,
       title: 'EspressoSync',
       description: 'Track and manage your caffeine intake.',
       Header1: 'Features:',
       list1: `<ul>
-                    <li>Log daily consumption (coffee, tea, energy drinks, etc.).</li>
-                    <li>Secure login and account management with Firebase.</li>
-                    <li>Monitor habits with charts and summaries.</li>
-                    <li>Access data from any device with Firebase storage.</li>
-                    <li>Optimized for desktop and mobile.</li>
-                </ul>`,
+                  <li>Log daily consumption (coffee, tea, energy drinks, etc.).</li>
+                  <li>Secure login and account management with Firebase.</li>
+                  <li>Monitor habits with charts and summaries.</li>
+                  <li>Access data from any device with Firebase storage.</li>
+                 <li>Optimized for desktop and mobile.</li>
+              </ul>`,
       Header2: 'Tech Stack:',
       list2: `<ul>
                     <li>Frontend: Vite.</li>
                     <li>Backend: Firebase (authentication, real-time database).</li>
                 </ul>`,
       image: ESimg,
-      url: "https://github.com/ag2332/EspressoSync"
+      url: 'https://github.com/ag2332/EspressoSync',
     },
     {
-      id: 2,
+      id: 3,
       title: 'ZenFusion',
       description: 'Asian-fusion restaurant website with booking feature',
       Header1: 'Features:',
       list1: `<ul>
-                    <li>Responsive Design: Optimized for both desktop and mobile devices.</li>
-                    <li>Interactive Menu: Dynamic display of dishes with detailed descriptions.</li>
-                    <li>Online Reservation: Allows users to easily reserve a table online.</li>
-                    <li>Visual Design: Sleek, modern design showcasing the restaurant's ambiance.</li>
-                    <li>Easy Navigation: User-friendly interface for quick access to key information.</li>
-                </ul>`,
+                  <li>Optimized for both desktop and mobile devices.</li>
+                  <li>Dynamic display of dishes with detailed descriptions.</li>
+                  <li>Allows users to easily reserve a table online.</li>
+                  <li>Sleek, modern design showcasing the restaurant's ambiance.</li>
+                  <li>User-friendly interface for quick access to key information.</li>
+              </ul>`,
       Header2: 'Tech Stack:',
       list2: `<ul>
                     <li>Frontend: React.</li>
                     <li>Design: Figma for UX, Headless UI for UI.</li>
                 </ul>`,
       image: ZFimg,
-      url: "https://github.com/ag2332/ZenFusion"
-    },
-    {
-      id: 3,
-      title: 'Website 3',
-      description: 'Website 3, coming soon',
-      Header1: 'Features:',
-      list1: `<ul>
-                    <li>Point 1:</li>
-                    <li>Point 2:</li>
-                    <li>Point 3:</li>
-                    <li>Point 4:</li>
-                    <li>Point 5:</li>
-                </ul>`,
-      Header2: 'Tech Stack:',
-      list2: `<ul>
-                    <li>Frontend:</li>
-                    <li>Backend: </li>
-                </ul>`,
-      image: CSimg,
-      url: "https://github.com/ag2332/"
+      url: 'https://github.com/ag2332/ZenFusion',
     },
   ]
 
@@ -77,7 +77,7 @@ const Portfolio = () => {
     Header2,
     list2,
     image,
-    url
+    url,
   }) {
     return (
       <Grid2 className="container portfolio-page">
@@ -97,7 +97,8 @@ const Portfolio = () => {
         </div>
         <div className="portfolio-container">
           <a href={url} target="_blank" rel="noopener noreferrer">
-            <img className="grid-img" src={image} alt="portfolio-img"/></a>
+            <img className="grid-img" src={image} alt="portfolio-img" />
+          </a>
         </div>
       </Grid2>
     )
@@ -116,7 +117,7 @@ const Portfolio = () => {
           Header2,
           list2,
           image,
-          url
+          url,
         } = item
         return (
           <PortfolioCard
