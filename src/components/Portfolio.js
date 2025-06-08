@@ -3,11 +3,32 @@ import Grid2 from './atoms/Grid2'
 import ESimg from '../assets/images/EspressoSync-logo.png'
 import ZFimg from '../assets/images/zenfusion.png'
 import SBimg from '../assets/images/story-book.svg'
+import FRimg from '../assets/images/form-radar.png'
 
 const Portfolio = () => {
   const cardData = [
     {
       id: 1,
+      title: 'Form Radar',
+      description: 'Fantasy Premier League insights and analytics app',
+      Header1: 'Features:',
+      list1: `<ul>
+                 <li>Responsive UI built with Next.js, React, and TypeScript.</li>
+                    <li>Utilises the Premiar League API with Next.js api router for efficienct fetching.</li>
+                    <li>GraphQL used for efficient data fetching and real-time updates.</li>
+                    <li>Authentication integrated using AWS Cognito.</li>
+                    <li>Deployed with AWS S3 and monitored via CloudWatch.</li>
+              </ul>`,
+      Header2: 'Tech Stack:',
+      list2: `<ul>
+                    <li>Frontend: Next.js, React, TypeScript, Tailwind CSS.</li>
+                    <li>Backend: AWS.</li>
+                </ul>`,
+      image: FRimg,
+      url: 'https://github.com/ag2332/FormRadar',
+    },
+    {
+      id: 2,
       title: 'Future Digital Component Library',
       description: 'Reusable component library built in Storybook',
       Header1: 'Features:',
@@ -24,10 +45,10 @@ const Portfolio = () => {
                     <li>Backend: StoryBook.</li>
                 </ul>`,
       image: SBimg,
-      url: 'https://github.com/ag2332/',
+      url: 'https://github.com/ag2332/fd-storybook',
     },
     {
-      id: 2,
+      id: 3,
       title: 'EspressoSync',
       description: 'Track and manage your caffeine intake.',
       Header1: 'Features:',
@@ -47,7 +68,7 @@ const Portfolio = () => {
       url: 'https://github.com/ag2332/EspressoSync',
     },
     {
-      id: 3,
+      id: 4,
       title: 'ZenFusion',
       description: 'Asian-fusion restaurant website with booking feature',
       Header1: 'Features:',
