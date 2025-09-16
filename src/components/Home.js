@@ -13,7 +13,7 @@ const Home = () => {
           <img className="title-logo" src={LogoALarge} alt="titleA" />
           <span>rchie</span>
         </h1>
-        <h2>Frontend/React Developer</h2>
+        <h2>Full Stack Developer</h2>
         <Buttons />
       </div>
       <div className="img-container">
