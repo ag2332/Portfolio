@@ -9,13 +9,13 @@ const About = () => {
       <div className="about-header-text">
         <h1>About me</h1>
         <p>
-          Hi there, my name is Archie and I'm a 22 year old full stack developer
+          Hi there, my name is Archie and I'm a 22 year old frontend developer
           looking for a role in a company where I can grow and learn. I am
           incredibly passionate about UX & UI and throughly enjoy bulding user-focused
           applications.
         </p>
         <p>
-          As a junior full stack developer, I embrace growth through both
+          As a junior frontend developer, I embrace growth through both
           successes and mistakes. I welcome feedback and see it as key to
           improving my skills. With a mindset of continuous learning, I seek
           opportunities to expand my knowledge and tackle new challenges.
